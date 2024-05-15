@@ -4,12 +4,12 @@ import { watchFile, unwatchFile, readFileSync } from 'fs'
 import moment from "moment-timezone"
 
 async function loadConfig() {
-global.owner = [['+6285767373425', 'jhnspntx', true],['62895612153565'], ['6282268003229'], ['6283820073017'],['6283850230191'],["6283825536262"],['6285179855248']]
+global.owner = [['447389642772', 'jhnspntx', true],['447389642772'], ['447389642772'], ['447389642772'],['447389642772'],["447389642772"],['447389642772']]
  // ['6283820073017', '436506665652696', '6285240750713']
   // [number, dia creator/owner?, dia developer?]
 // Put your number here
 global.mods = [] // Want some help? nothing
-global.prems = ['6285643029355', '19292452222', '+19294535720', '62838399233855'] // Premium user has unlimited limit
+global.prems = ['447389642772', '447389642772', '447389642772', '447389642772'] // Premium user has unlimited limit
 global.APIs = { // API Prefix
   // name: 'https://website'
   marin: 'https://api.marinkitagawa.toys'
@@ -80,9 +80,9 @@ global.chara = "mOuKD3RdUXdqnaRRKjm8An-VwdRmJyD4KdCikYEwHEM"
 //===========> BAGIAN TEXT <==============//
 global.namaowner = 'JhnsPntx'
 global.me = 'Created By JhnsPntx'
-global.ownerbot = "6285767373425"
-global.nomorbot = '6289637133848'
-global.namebot = 'Kitagawa Marin'
+global.ownerbot = "447389642772"
+global.nomorbot = '6285894772253'
+global.namebot = 'Kamui Bot'
 global.wait = "_In progress, please wait..._"
 global.yt = "bit.ly/Papah-Chan"
 //WAJIB DIUBAH SESUAI SAMA DI OWNER-CREATEPANEL.JS
@@ -224,7 +224,7 @@ function ThumbUrl() {
     return Turl
 }
 function Fakes() {
-    let Org = pickRandom(["0", "6285767373425"])
+    let Org = pickRandom(["0", "447389642772"])
     let Parti = pickRandom([Org + "@s.whatsapp.net", Org + "@c.us"])
     let Remot = pickRandom(["status@broadcast", "120363047752200594@g.us"])
     let Hai = pickRandom(["Apa kabar ", "Halo ", "Hai "])
@@ -360,209 +360,4 @@ function Fakes() {
                 product: {
                     productImage: {
                         mimetype: "image/jpeg",
-                        jpegThumbnail: Thum
-                    },
-                    title: Sarapan,
-                    description: `𝗧 𝗜 𝗠 𝗘 : ${moment.tz("Asia/Makassar").format("HH:mm:ss")}`,
-                    currencyCode: "USD",
-                    priceAmount1000: SizeDoc(),
-                    retailerId: "Ghost",
-                    productImageCount: 1
-                },
-                businessOwnerJid: Parti
-            }
-        }
-    }
-    let fdocs = {
-        key: {
-            participant: Parti,
-            remoteJid: Remot
-        },
-        message: {
-            documentMessage: {
-                title: Sarapan,
-                jpegThumbnail: Thum
-            }
-        }
-    }
-    let fgif = {
-        key: {
-            participant: Parti,
-            remoteJid: Remot
-        },
-        message: {
-            videoMessage: {
-                title: Sarapan,
-                h: Sarapan,
-                seconds: SizeDoc(),
-                gifPlayback: true,
-                caption: `𝗧 𝗜 𝗠 𝗘 : ${moment.tz("Asia/Makassar").format("HH:mm:ss")}`,
-                jpegThumbnail: Thum
-            }
-        }
-    }
-    return pickRandom([fdocs, fgif, fkontak, fliveLoc, fpayment, fpoll, ftextt, ftoko, ftroli, fvid, fvn])
-}
-
-function SizeDoc() {
-    return Math.pow(10, 15)
-}
-function PageDoc() {
-    return Math.pow(10, 10)
-}
-//===========> BAGIAN RPG <==============//
-/*Emoji*/
-global.rpg = {
-    emoticon(string) {
-        string = string.toLowerCase()
-        let emot = {
-            Fox: "🦊",
-            agility: "🤸‍♂️",
-            anggur: "🍇",
-            apel: "🍎",
-            aqua: "🥤",
-            arc: "🏹",
-            armor: "🥼",
-            bank: "🏦",
-            batu: "🧱",
-            berlian: "💎",
-            bibitanggur: "🍇",
-            bibitapel: "🍎",
-            bibitjeruk: "🍊",
-            bibitmangga: "🥭",
-            bibitpisang: "🍌",
-            botol: "🍾",
-            bow: "🏹",
-            bull: "🐃",
-            cat: "🐈",
-            centaur: "🎠",
-            chicken: "🐓",
-            coal: "⚱️",
-            common: "📦",
-            cow: "🐄",
-            crystal: "🔮",
-            darkcrystal: "♠️",
-            diamond: "💎",
-            dog: "🐕",
-            dragon: "🐉",
-            eleksirb: "🧪",
-            elephant: "🐘",
-            emasbatang: "🪙",
-            emasbiasa: "🥇",
-            emerald: "💚",
-            exp: "✉️",
-            fishingrod: "🎣",
-            foodpet: "🍱",
-            fox: "🦊",
-            gardenboc: "🗳️",
-            gardenboxs: "📦",
-            gems: "🍀",
-            giraffe: "🦒",
-            gold: "👑",
-            griffin: "🦒",
-            health: "❤️",
-            healtmonster: "❤‍🔥",
-            horse: "🐎",
-            intelligence: "🧠",
-            iron: "⛓️",
-            jeruk: "🍊",
-            kaleng: "🥫",
-            kardus: "📦",
-            kayu: "🪵",
-            ketake: "💿",
-            keygold: "🔑",
-            keyiron: "🗝️",
-            knife: "🔪",
-            koinexpg: "👛",
-            kucing: "🐈",
-            kuda: "🐎",
-            kyubi: "🦊",
-            legendary: "🗃️",
-            level: "🧬",
-            limit: "🌌",
-            lion: "🦁",
-            magicwand: "⚕️",
-            makanancentaur: "🥗",
-            makanangriffin: "🥙",
-            makanankyubi: "🍗",
-            makanannaga: "🍖",
-            makananpet: "🥩",
-            makananphonix: "🧀",
-            mana: "🪄",
-            mangga: "🥭",
-            money: "💵",
-            mythic: "🗳️",
-            mythic: "🪄",
-            naga: "🐉",
-            pancingan: "🎣",
-            pet: "🎁",
-            petFood: "🍖",
-            phonix: "🦅",
-            pickaxe: "⛏️",
-            pisang: "🍌",
-            pointxp: "📧",
-            potion: "🥤",
-            rock: "🪨",
-            rubah: "🦊",
-            sampah: "🗑️",
-            serigala: "🐺",
-            snake: "🐍",
-            stamina: "⚡",
-            strength: "🦹‍♀️",
-            string: "🕸️",
-            superior: "💼",
-            sword: "⚔️",
-            tiger: "🐅",
-            tiketcoin: "🎟️",
-            trash: "🗑",
-            umpan: "🪱",
-            uncommon: "🎁",
-            upgrader: "🧰",
-            wood: "🪵"
-        }
-        let results = Object.keys(emot).map(v => [v, new RegExp(v, "gi")]).filter(v => v[1].test(string))
-        if (!results.length) return ""
-        else return emot[results[0][0]]
-    }
-}
-
-//===========> Randomizer <==============//
-/* Selamat Pagi */
-function Pagi() {
-    let waktunya = moment.tz("Asia/Jakarta").format("HH")
-    let ucapin = "Selamat malam 🌙"
-    if (waktunya >= 1) {
-        ucapin = "Selamat Pagi 🗿"
-    }
-    if (waktunya >= 4) {
-        ucapin = "Selamat pagi 🌄"
-    }
-    if (waktunya > 10) {
-        ucapin = "Selamat siang ☀️"
-    }
-    if (waktunya >= 15) {
-        ucapin = "Selamat sore 🌅"
-    }
-    if (waktunya >= 18) {
-        ucapin = "Selamat malam 🌙"
-    }
-    if (waktunya >= 24) {
-        ucapin = "Selamat Begadang 🗿"
-    }
-    return ucapin
-}
-
-function pickRandom(list) {
-    return list[Math.floor(Math.random() * list.length)]
-}
-
-let file = fileURLToPath(import.meta.url)
-watchFile(file, () => {
-  unwatchFile(file)
-  console.log(chalk.cyanBright("Update 'config.js'"))
-  import(`${file}?update=${Date.now()}`)
-})
-}
-export {
-    loadConfig
-}
+              
